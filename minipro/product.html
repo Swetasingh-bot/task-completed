@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 style="cursor:pointer" onclick="window.location.href='index.html'">My Shop</h1>
+        <button id="cartBtn" onclick="window.location.href='cart.html'">Cart (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <main id="productMain" class="productPage">
+        <!-- product details will be inserted here by product.js -->
+    </main>
+
+    <script src="cart-helpers.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

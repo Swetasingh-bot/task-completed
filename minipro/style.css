@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding: 20px 30px;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+header button{
+    padding: 10px 16px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header button:hover{
+    background-color: black;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.outerDiv{
+    width: 250px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.outerDiv img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.outerDiv h2{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+.outerDiv p{
+    font-size: 13px;
+    color: #555;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+.price-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.price-cart p{
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    height: auto;
+}
+
+.price-cart button{
+    padding: 8px 12px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.price-cart button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* product page */
+.productPage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.productPage img{
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
+.productInfo{
+    max-width: 400px;
+}
+
+.productInfo h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.productInfo p{
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.productInfo h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.productInfo button{
+    padding: 12px 20px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.productInfo button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* cart page */
+.cartItem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 15px 20px;
+    margin: 15px 30px;
+}
+
+.cartItem img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cartItem h2{
+    font-size: 16px;
+    flex: 1;
+}
+
+.cartItem .qtyBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cartItem .qtyBox button{
+    padding: 4px 10px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cartItem .removeBtn{
+    padding: 8px 12px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cartItem .removeBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.billSummary{
+    border: 2px solid black;
+    margin: 20px 30px;
+    padding: 20px;
+    max-width: 350px;
+    float: right;
+}
+
+.billSummary h2{
+    margin-bottom: 15px;
+}
+
+.billRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.billRow.total{
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.emptyMsg{
+    text-align: center;
+    padding: 60px;
+    font-size: 18px;
+    color: #555;
+}
